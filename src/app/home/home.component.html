@@ -42,13 +42,13 @@
     }
     .myhomeimg{
         border-top: 1px solid grey;
-        background-image: url(assets/home.jpeg);
+        background-image: url(assets/h7.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 650px;
         font-size: larger;
         font-weight: bolder;
-        color: whitesmoke;
+        color: darkred;
         text-align: right;
     }
     .myhomeimg2{
@@ -59,7 +59,7 @@
           rgba(0, 0, 0, 0.4)
         ),
         /* bottom, image */
-        url(assets/home5.webp);
+        url(assets/h8.jpeg);
         border-top: 1px solid grey;
         background-repeat: no-repeat;
         background-size: cover;
@@ -71,7 +71,7 @@
     }
     .bestseller{
         border-top: 1px solid grey;
-        background-color:coral;
+        background-color:rgb(255, 160, 123);
         background-size: 100%;
         height: 650px;
         font-size: larger;
@@ -86,22 +86,9 @@
     .fdiv{
         border-bottom: 6px groove grey;
     }
-    .animation{
-        animation-name: slidein;
-        animation-duration: 3s;
-        margin-bottom: 8%;
-    }
-    @keyframes slidein{
-        from{
-            margin-left: 100%;
-        }
-        to{
-            margin-left: 5.5%;
-        }
-    }
     .animation1{
         animation-name: slideup;
-        animation-duration: 1s;
+        animation-duration: 2s;
         
     }
     @keyframes slideup{
@@ -109,7 +96,7 @@
             margin-top: 100%;
         }
         to{
-            margin-bottom: 8%;
+            margin-top: 0%;
         }
     }
     .hide{
@@ -145,7 +132,7 @@
 
 <!--first screen-->
 <div class="fdiv">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" > 
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -153,9 +140,9 @@
     </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="myhomeimg aos-init aos-animate"  data-aos="flip-up" data-aos-duration="1500">
-                <h2 style="padding-top: 20%;padding-right: 5%;">Welcome To Waffle Maniaaa!!</h2><br>
-                <h4 style="padding-right: 5%;">A sweet pleasure to your sweet tooth. <br>Go through all our below recepies</h4>
+            <div class="myhomeimg"  data-aos="flip-down" data-aos-duration="1500">
+                <h2 style="padding-top: 21%;padding-right: 5%;"  data-aos="fade-right" data-aos-duration="1500">Welcome To Waffle Maniaaa!!</h2>
+                <h4 style="padding-right: 5%;margin-top: 2%;" data-aos="fade-left" data-aos-duration="1500">A sweet pleasure to your sweet tooth. <br>Go through all our below recepies</h4>
             </div> 
         </div>
         <div class="carousel-item">
@@ -178,8 +165,8 @@
             </div>
         </div>
         <div class="carousel-item">
-            <div class="myhomeimg2 aos-init aos-animate"  data-aos="flip-up" data-aos-duration="1500">
-                <h2 style="padding-top: 20%;padding-right: 5%;">A life without waffle is like a day without smiles.                </h2><br>
+            <div class="animation1 myhomeimg2">
+                <h2 class="animation1" style="padding-top: 30%;padding-left: 5%;">A life without waffle is like a day without smiles.                </h2><br>
             </div> 
         </div>
       </div>
@@ -232,15 +219,15 @@
 <!--video-->
 
 <!--menu-->
-<div class="container animation" >
-    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 5%; background-color: black; width: 300px; text-align: center; border-bottom: 3px solid coral;margin-left: 36%;">** Our Menu **<br>Click for Recipe</h2>
+<div class="container animation" data-aos="flip-left" data-aos-duration="2000">
+    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 7%; background-color: black; width: 300px; text-align: center; border-bottom: 3px solid coral;margin-left: 39%;">** Our Menu **<br>Click for Recipe</h2>
     <div class="row mycard">
         <div class="col-md-4 myeachmenu">
             <a routerLink="/waffyorder"><img src="assets/bel1.jpeg" class="imgc"></a>
             <h5 class="ch">Belgian Waffle</h5>
         </div>
         <div class="col-md-4 myeachmenu">
-            <a routerLink="/cakeorder"><img src="assets/best3.jpeg" class="imgc"></a>
+            <a routerLink="/cakeorder"><img src="assets/h4.jpeg" class="imgc"></a>
             <h5 class="ch">Waffle Cake</h5>
         </div>
         <div class="col-md-4 myeachmenu">
@@ -255,7 +242,7 @@
             <h5 class="ch">Milk Shakes</h5>
         </div>
         <div class="col-md-4 myeachmenu">
-            <a routerLink="/fruitsorder"><img src="assets/fruit.jpeg" class="imgc"></a>
+            <a routerLink="/fruitsorder"><img src="assets/f7.webp" class="imgc"></a>
             <h5 class="ch">Fruits Waffle</h5>
         </div>
         <div class="col-md-4 myeachmenu">
@@ -267,8 +254,8 @@
 <!--menu-->
 
 <!--outlets-->
-<div class="container-fluid">
-    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 3%; background-color: black; width: 400px; text-align: center; border-bottom: 3px solid coral;margin-left: 33.33%;">** Our Outlets **<br>Hover for full address</h2>
+<div class="container-fluid"  data-aos="flip-right" data-aos-duration="3000" id="outlets">
+    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 3%; background-color: black; width: 400px; text-align: center; border-bottom: 3px solid coral;margin-left: 34%;">** Our Outlets **<br>Hover for full address</h2>
     <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
         <div class="col-md-4 myeachoutcard hovcard1">
             <div class="card" style="width: 18rem;" >
