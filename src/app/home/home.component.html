@@ -69,6 +69,20 @@
         color: whitesmoke;
         padding-left: 23%;
     }
+    .myhomeimg3{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        /* bottom, image */
+        url(assets/h11.png);
+        border-top: 1px solid grey;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        font-size: larger;
+        font-weight: bolder;
+        color: whitesmoke;
+        padding-left: 23%;
+    }
     .bestseller{
         border-top: 1px solid grey;
         background-color:rgb(255, 160, 123);
@@ -87,6 +101,11 @@
         border-bottom: 6px groove grey;
     }
     .animation1{
+        animation-name: slideup;
+        animation-duration: 1s;
+        
+    }
+    .animation2{
         animation-name: slideup;
         animation-duration: 2s;
         
@@ -137,6 +156,8 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -165,8 +186,13 @@
             </div>
         </div>
         <div class="carousel-item">
-            <div class="animation1 myhomeimg2">
-                <h2 class="animation1" style="padding-top: 30%;padding-left: 5%;">A life without waffle is like a day without smiles.                </h2><br>
+            <div class="animation2 myhomeimg2">
+                <h2 class="animation2" style="padding-top: 30%;padding-left: 5%;">A life without waffle is like a day without smiles.</h2><br>
+            </div> 
+        </div>
+
+        <div class="carousel-item">
+            <div class="animation2 myhomeimg3">
             </div> 
         </div>
       </div>
@@ -254,7 +280,7 @@
 <!--menu-->
 
 <!--outlets-->
-<div class="container-fluid"  data-aos="flip-right" data-aos-duration="3000" id="outlets">
+<div class="container"  data-aos="flip-right" data-aos-duration="3000" id="outlets">
     <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 3%; background-color: black; width: 400px; text-align: center; border-bottom: 3px solid coral;margin-left: 34%;">** Our Outlets **<br>Hover for full address</h2>
     <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
         <div class="col-md-4 myeachoutcard hovcard1">
@@ -292,47 +318,3 @@
 
 
 
-
-
-<!--
-<div class="row mycard">
-<div class="col-sm-6 col-md-3">
-    <div class="card myeachcard" style="width: 15rem;">
-        <img src="assets/slogo4.jpeg" height="200px" class="card-img-top" alt="..." style="border-bottom: 2px solid darkgreen;">
-        <div class="card-body" style="text-align: center; background-color: black;">
-            <h5 class="card-title">Swimming</h5>
-            <a href="#" class="btn btn-success">Know More</a>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-md-3">
-    <div class="card myeachcard" style="width: 15rem;">
-        <img src="assets/Llogo.jpeg" height="200px" class="card-img-top" alt="..." style="border-bottom: 2px solid darkgreen;">
-        <div class="card-body" style="text-align: center; background-color: black;">
-            <h5 class="card-title">Lawn Tennis</h5>
-            <a href="#" class="btn btn-success">Know More</a>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-md-3">
-    <div class="card myeachcard" style="width: 15rem;">
-        <img src="assets/clogo3.jpeg" height="200px" class="card-img-top" alt="..." style="border-bottom: 2px solid darkgreen;">
-        <div class="card-body" style="text-align: center; background-color: black;">
-            <h5 class="card-title">Cricket</h5>
-            <a href="#" class="btn btn-success">Know More</a>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-md-3">
-    <div class="card myeachcard" style="width: 15rem;">
-        <img src="assets/flogo.jpeg" height="200px" class="card-img-top" alt="..." style="border-bottom: 2px solid darkgreen;">
-        <div class="card-body" style="text-align: center; background-color: black;">
-            <h5 class="card-title">FootBall</h5>
-            <a href="#" class="btn btn-success">Know More</a>
-        </div>
-    </div>
-</div>
-</div>-->
-
-
-   
