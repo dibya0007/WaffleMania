@@ -10,8 +10,18 @@
     .imgc{
         border: 1px solid black;border-radius: 50%; width: 90%;height: 85%; margin-left: 5%;
     }
+    .imgc:hover{
+        border: 1px solid white;
+        border-radius: 50%;
+        box-shadow: 0 2px 30px rgb(255, 255, 255);
+    }
     .ch{
-        color: coral;
+        color: white;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .ch1{
+        color: white;
         text-align: center;
         margin-top: 3%;
     }
@@ -54,19 +64,19 @@
     .myhomeimg2{
         background:
         /* top, transparent black, faked with gradient */ 
-        linear-gradient(
+       /* linear-gradient(
           rgba(0, 0, 0, 0.4), 
           rgba(0, 0, 0, 0.4)
-        ),
+        ),*/
         /* bottom, image */
-        url(assets/h8.jpeg);
+        url(assets/wb7.webp);
         border-top: 1px solid grey;
         background-repeat: no-repeat;
         background-size: cover;
         height: 650px;
         font-size: larger;
         font-weight: bolder;
-        color: whitesmoke;
+        color: black;
         padding-left: 23%;
     }
     .myhomeimg3{
@@ -85,7 +95,9 @@
     }
     .bestseller{
         border-top: 1px solid grey;
-        background-color:rgb(255, 160, 123);
+        /*background-color:rgb(255, 160, 123);*/
+        background:  
+            url(assets/wb12.avif);
         background-size: 100%;
         height: 650px;
         font-size: larger;
@@ -139,6 +151,42 @@
             font-size: smaller;
         }
     }
+    .menu{
+        margin-bottom: 5%;
+        background-color: cornsilk;
+        background: 
+        /* top, transparent black, faked with gradient */ 
+       linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(assets/wb7.jpeg);
+        background-size: 100% 120%;
+        background-repeat: no-repeat;
+        margin-top: 0%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        margin-bottom: .4%;
+    }
+    .outlet{
+        background:
+        /* top, transparent black, faked with gradient */ 
+       /* linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),*/
+        /* bottom, image */
+        url(assets/wb5.jpeg);
+        background-size: 100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 0%;
+
+    }
+    .carousel-inner>.item {
+          width: 100%;
+    }
+
  
 </style>
 
@@ -157,7 +205,6 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -167,7 +214,7 @@
             </div> 
         </div>
         <div class="carousel-item">
-            <div class="container bestseller">
+            <div class="container-fluid bestseller">
                 <h2 style="margin-top: 3%;color: black;border-bottom: 2px dashed black;padding-bottom: 2%;">** Our BestSellers! **</h2>
                 <div class="row mycard frow ">
                     <div class="col-md-4 animation1">
@@ -187,7 +234,7 @@
         </div>
         <div class="carousel-item">
             <div class="animation2 myhomeimg2">
-                <h2 class="animation2" style="padding-top: 30%;padding-left: 5%;">A life without waffle is like a day without smiles.</h2><br>
+                <h2 class="animation2" style="padding-top: 10%;padding-left: 25%;">A life without waffle is like <br>a day without smiles.</h2><br>
             </div> 
         </div>
 
@@ -209,8 +256,8 @@
 <!--first screen-->
 
 <!--video-->
-<div>
-  <div id="carouselExampleCaptionsvid" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1200" class="aos-init aos-animate">
+<div style="height: 725px;">
+  <div id="carouselExampleCaptionsvid" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1200">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptionsvid" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptionsvid" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -245,7 +292,7 @@
 <!--video-->
 
 <!--menu-->
-<div class="container animation" data-aos="flip-left" data-aos-duration="2000">
+<div class="container-fluid menu" data-aos="flip-left" data-aos-duration="2000">
     <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 7%; background-color: black; width: 300px; text-align: center; border-bottom: 3px solid coral;margin-left: 39%;">** Our Menu **<br>Click for Recipe</h2>
     <div class="row mycard">
         <div class="col-md-4 myeachmenu">
@@ -265,26 +312,26 @@
     <div class="row mycard">
         <div class="col-md-4 myeachmenu">
             <a routerLink="/milkshakeorder"><img src="assets/milk.jpeg" class="imgc"></a>
-            <h5 class="ch">Milk Shakes</h5>
+            <h5 class="ch1">Milk Shakes</h5>
         </div>
         <div class="col-md-4 myeachmenu">
-            <a routerLink="/fruitsorder"><img src="assets/f7.webp" class="imgc"></a>
-            <h5 class="ch">Fruits Waffle</h5>
+            <a routerLink="/fruitsorder"><img src="assets/menu1.avif" class="imgc"></a>
+            <h5 class="ch1">Fruits Waffle</h5>
         </div>
         <div class="col-md-4 myeachmenu">
-            <a routerLink="/iceorder"><img src="assets/ice.jpeg" class="imgc"></a>
-            <h5 class="ch">Ice-Creame Waffle</h5>
+            <a routerLink="/iceorder"><img src="assets/menu.avif" class="imgc"></a>
+            <h5 class="ch1">Ice-Creame Waffle</h5>
         </div>
     </div>
 </div>
 <!--menu-->
 
 <!--outlets-->
-<div class="container"  data-aos="flip-right" data-aos-duration="3000" id="outlets">
-    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 3%; background-color: black; width: 400px; text-align: center; border-bottom: 3px solid coral;margin-left: 34%;">** Our Outlets **<br>Hover for full address</h2>
-    <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
+<div class="container-fluid outlet" data-aos="flip-right" data-aos-duration="3000" id="outlets">
+    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 7%; background-color: black; width: 400px; text-align: center; border-bottom: 3px solid coral;margin-left: 34%;">** Our Outlets **<br>Hover for full address</h2>
+    <div class="row" style="padding-left: 7%;margin-bottom: 7%;">
         <div class="col-md-4 myeachoutcard hovcard1">
-            <div class="card" style="width: 18rem;" >
+            <div class="card" style="width: 18rem;  border: 1.5px solid black;" >
                 <img src="assets/out3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text hovcard" style="text-align: center;font-size: larger;">BTM Layout</p>
@@ -294,7 +341,7 @@
             </div>
         </div>
         <div class="col-md-4 myeachoutcard hovcard2">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; border: 1.5px solid black;">
                 <img src="assets/out2.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Marathahalli</p>
@@ -303,7 +350,7 @@
             </div>
         </div>
         <div class="col-md-4 myeachoutcard hovcard3">
-            <div class="card" style="width: 18rem;" >
+            <div class="card" style="width: 18rem;  border: 1.5px solid black;" >
                 <img src="assets/out4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Koramangla</p>
