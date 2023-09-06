@@ -9,6 +9,7 @@ import { IceorderComponent } from './iceorder/iceorder.component';
 import { FruitsorderComponent } from './fruitsorder/fruitsorder.component';
 import { HomeComponent } from './home/home.component';
 import { OrdernowComponent } from './ordernow/ordernow.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,12 +21,12 @@ const routes: Routes = [
   {path:'waffyorder', component:WaffyorderComponent},
   {path:'milkshakeorder', component:MilkshakeorderComponent},
   {path:'iceorder', component:IceorderComponent},
-  {path:'fruitsorder', component:FruitsorderComponent}
-
+  {path:'fruitsorder', component:FruitsorderComponent},
+  {path:'aboutme', component:AboutmeComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -183,10 +183,25 @@
         margin-bottom: 0%;
 
     }
-    .carousel-inner>.item {
-          width: 100%;
+    .carousel-item{
+          overflow: hidden;
     }
-
+    .animation3{
+        animation-name: zoom;
+        animation-duration: 2s;
+        
+    }
+    @keyframes zoom{
+        0% {
+            transform: scale(1, 1);
+        }
+        50% {
+            transform: scale(1.5, 1.5);
+        }
+        100% {
+            transform: scale(1, 1);
+    }
+}
  
 </style>
 
@@ -208,9 +223,9 @@
     </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="myhomeimg"  data-aos="flip-down" data-aos-duration="1500">
-                <h2 style="padding-top: 21%;padding-right: 5%;"  data-aos="fade-right" data-aos-duration="1500">Welcome To Waffle Maniaaa!!</h2>
-                <h4 style="padding-right: 5%;margin-top: 2%;" data-aos="fade-left" data-aos-duration="1500">A sweet pleasure to your sweet tooth. <br>Go through all our below recepies</h4>
+            <div class="myhomeimg animation3">
+                <h2 style="padding-top: 21%;padding-right: 5%;" class="animation2" >Welcome To Waffle Maniaaa!!</h2>
+                <h4 style="padding-right: 5%;margin-top: 2%;" class="animation1">A sweet pleasure to your sweet tooth. <br>Go through all our below recepies</h4>
             </div> 
         </div>
         <div class="carousel-item">
@@ -292,8 +307,8 @@
 <!--video-->
 
 <!--menu-->
-<div class="container-fluid menu" data-aos="flip-left" data-aos-duration="2000">
-    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 7%; background-color: black; width: 300px; text-align: center; border-bottom: 3px solid coral;margin-left: 39%;">** Our Menu **<br>Click for Recipe</h2>
+<div class="container-fluid menu" data-aos="flip-left" data-aos-duration="2000" >
+    <h2 style="color: white;padding-bottom: 1%;padding-top: 1%;margin-bottom: 4%; background-color: black; width: 300px; text-align: center; border-bottom: 3px solid coral;margin-left: 39%;">** Our Menu **<br>Click for Recipe</h2>
     <div class="row mycard">
         <div class="col-md-4 myeachmenu">
             <a routerLink="/waffyorder"><img src="assets/bel1.jpeg" class="imgc"></a>

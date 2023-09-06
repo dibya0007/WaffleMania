@@ -12,6 +12,7 @@ import { MilkshakeorderComponent } from './milkshakeorder/milkshakeorder.compone
 import { IceorderComponent } from './iceorder/iceorder.component';
 import { FruitsorderComponent } from './fruitsorder/fruitsorder.component';
 import { OrdernowComponent } from './ordernow/ordernow.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OrdernowComponent } from './ordernow/ordernow.component';
     MilkshakeorderComponent,
     IceorderComponent,
     FruitsorderComponent,
-    OrdernowComponent
+    OrdernowComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

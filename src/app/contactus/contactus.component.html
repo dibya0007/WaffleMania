@@ -1,4 +1,17 @@
 <style>
+    .animation2{
+        animation-name: slideup;
+        animation-duration: 1.5s;
+        
+    }
+    @keyframes slideup{
+        from{
+            margin-top: 100%;
+        }
+        to{
+            padding-top: 0%;
+        }
+    }
     .field{
         background-color: rgb(249, 235, 227);
     }
@@ -14,7 +27,7 @@
 </style>
 
 <div class="container-fluid" style="background-image: url(assets/ab.jpeg);padding-top: 5%;padding-bottom: 5%; ">
-    <div id="middle" class="row">
+    <div id="middle" class="row animation2">
         <div class="col-md-1">
 
         </div>
@@ -35,7 +48,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <input placeholder="Email Address" type="email" id="formEmail" class="form-control field">
-                            <small class="text-muted form-text" style="color: white;">We'll never share your email with anyone else.</small>
+                            <small class="text-muted form-text" style="color: black;">We'll never share your email with anyone else.</small>
                         </div>
                     </div>
                 </div>

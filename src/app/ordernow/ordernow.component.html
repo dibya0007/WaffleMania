@@ -1,7 +1,17 @@
 <style>
+     .myeachoutcard{
+        transition: transform .2s; /* Animation */
+    }
+    .myeachoutcard:hover{
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        border: 1px solid white;
+        margin: 0%;
+        box-shadow: 0 2px 30px rgb(255, 255, 255);
+
+    }
  .animation2{
         animation-name: slideup;
-        animation-duration: 2s;
+        animation-duration: 1s;
         
     }
     @keyframes slideup{
@@ -17,12 +27,12 @@
     }
 </style>
 
-<div class="container-fluid" style="background-image: url(assets/cb7.avif);background-size: 100% ;padding-top: 0%;margin-top: 0%;border: 2px solid black;">
+<div class="container-fluid" style="background-image: url(assets/cb77.avif);background-size: 100% ;padding-top: 0%;margin-top: 0%;border: 2px solid black;">
 <div class="container-fluid">
     <h2 class="head">** Classic Waffles **<br>Buy Now!</h2>
-    <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
-        <div class="col-md-4 myeachoutcard hovcard1">
-            <div class="card" style="width: 18rem;" >
+    <div class="row animation2" style="padding-left: 7%;margin-bottom: 4%;">
+        <div class="col-md-4 hovcard1">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/waff1.avif" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text hovcard" style="text-align: center;font-size: larger;">Milkyway Biscoff</p>
@@ -31,8 +41,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-4 hovcard2">
+            <div class="card myeachoutcard" style="width: 18rem;">
                 <img src="assets/best4.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Red velvet</p>
@@ -41,8 +51,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard3">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4  hovcard3">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/bel3.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Triple Chocolate</p>
@@ -57,8 +67,8 @@
 <div class="container-fluid">
     <h2 class="head">** Waffle Cakes **<br>Buy Now!</h2>
     <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
-        <div class="col-md-4 myeachoutcard hovcard1">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard1">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/cake1.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text hovcard" style="text-align: center;font-size: larger;">Marble cake</p>
@@ -67,8 +77,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-4 hovcard2">
+            <div class="card myeachoutcard" style="width: 18rem;">
                 <img src="assets/cake2.avif" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Red velvet cake</p>
@@ -77,8 +87,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard3">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard3">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/cake3.avif" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Nutella cake</p>
@@ -93,8 +103,8 @@
 <div class="container-fluid">
     <h2 class="head">** Fruits Waffles **<br>Buy Now!</h2>
     <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
-        <div class="col-md-4 myeachoutcard hovcard1">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard1">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/f1.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text hovcard" style="text-align: center;font-size: larger;">Blueberry Raspberry waffle</p>
@@ -103,8 +113,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-4 hovcard2">
+            <div class="card myeachoutcard" style="width: 18rem;">
                 <img src="assets/f2.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Classic Banana waffle </p>
@@ -113,8 +123,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard3">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard3">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/f3.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Strawberry waffle with cream</p>
@@ -129,8 +139,8 @@
 <div class="container-fluid">
     <h2 class="head">** Ice-Cream Waffles **<br>Buy Now!</h2>
     <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
-        <div class="col-md-4 myeachoutcard hovcard1">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard1">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/i2.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text hovcard" style="text-align: center;font-size: larger;">Vanilla Ice-Cream waffle</p>
@@ -139,8 +149,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-4 hovcard2">
+            <div class="card myeachoutcard" style="width: 18rem;">
                 <img src="assets/i4.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Strawberry Ice-Cream waffle</p>
@@ -149,8 +159,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard3">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard3">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/i3.jpeg" class="card-img-top" alt="..." height="230px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Coffee Ice-Cream waffle</p>
@@ -165,8 +175,8 @@
 <div class="container-fluid">
     <h2 class="head">** Classic Waffles **<br>Buy Now!</h2>
     <div class="row" style="padding-left: 7%;margin-bottom: 4%;">
-        <div class="col-md-4 myeachoutcard hovcard1">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard1">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/best6.jpeg" class="card-img-top" alt="..." height="280px">
                 <div class="card-body">
                     <p class="card-text hovcard" style="text-align: center;font-size: larger;">Coffee Milkshake</p>
@@ -175,8 +185,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-4 hovcard2">
+            <div class="card myeachoutcard" style="width: 18rem;">
                 <img src="assets/milk1.jpeg" class="card-img-top" alt="..." height="280px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Strawberry Milkshake</p>
@@ -185,8 +195,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 myeachoutcard hovcard3">
-            <div class="card" style="width: 18rem;" >
+        <div class="col-md-4 hovcard3">
+            <div class="card myeachoutcard" style="width: 18rem;" >
                 <img src="assets/milk.webp" class="card-img-top" alt="..." height="280px">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center;font-size: larger;">Chocolate Milkshake</p>
